@@ -3,35 +3,15 @@
 #### 介绍
 本仓库用于存放尚医通-预约挂号平台。
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+1.  本项目是在b站尚硅谷学习的尚医通项目。
+2.  除了完成视频中的内容，本项目对该项目进行了些许改造
+    （1）使用springboot整合了安装在阿里云的redis集群
+    （2）原项目中使用了阿里云的短信验证服务，这里使用了容联云的免费版本，即手机号写死，只能发给这个手机号。
+    （3）对于原项目中的一些错误进行了修改，比如如果按照视频的做法，由于排班信息存储在mongodb中，而医院管理系统那个项目的排班又是使用mysql的，因此对造成了每次下单后数                                据对应不上，评论里的解决方法是每次都对1L这个数据进行下单。而这里对订单service以及医院管理中的HospSericeImpl中的部分代码进行了修改，使传递的数据一致。否则，如果按照前面的改法，每次预约数会对应不上。
+    （4）在管理后台系统中增加了订单管理的功能，这个功能与前台基本一致，但由于后台不需要支付，取消了支付功能。
+3.  在原项目基础上对部分操作进行了事务管理。
 
 
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
