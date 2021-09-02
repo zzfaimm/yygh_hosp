@@ -347,7 +347,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper,OrderInfo> impleme
         wrapper.eq("reserve_date", new DateTime().toString("yyyy-MM-dd"));
         wrapper.ne("order_status", OrderStatusEnum.CANCLE.getStatus());
         List<OrderInfo> orderInfoList = baseMapper.selectList(wrapper);
-
+        //对所有该时间段内的客户发送短信发送短信
         for (OrderInfo orderInfo : orderInfoList) {
             //短信提示 固定模板
             MsmVo msmVo = new MsmVo();
