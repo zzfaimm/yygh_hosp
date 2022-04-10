@@ -20,6 +20,9 @@
 1、医院设置管理
 （1）医院设置列表、添加、锁定、删除
 （2）医院列表、详情、排班、下线
+![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/92562501/162599438-ee57ed05-b2cb-43e4-82e6-ee871383929a.png)
+
 
 2、数据管理
 （1）数据字典树形显示、导入、导出
@@ -105,5 +108,4 @@
 4、npm
 
 5、ECharts
-![image](https://user-images.githubusercontent.com/92562501/162599438-ee57ed05-b2cb-43e4-82e6-ee871383929a.png)
 
