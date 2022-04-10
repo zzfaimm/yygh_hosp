@@ -105,4 +105,5 @@
 4、npm
 
 5、ECharts
+![image](https://user-images.githubusercontent.com/92562501/162599438-ee57ed05-b2cb-43e4-82e6-ee871383929a.png)
 
